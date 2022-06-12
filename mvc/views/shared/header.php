@@ -14,9 +14,8 @@
                 <ul class="other-links-list">
                   <li>
                     <?php
-                      // $logged = 
                       if (isset($_SESSION['name'])){
-                        echo "Xin chào, " . $_SESSION['name'];
+                        echo "Xin chào, " . "<span>" .  $_SESSION['name'] . "</span>";
                       }
                       else echo "<a style='color: white; font-weight: bold' href='http://localhost/web212/User/sign_in'>Đăng nhập</a>";
                       
@@ -58,7 +57,7 @@
 
             <div class="uk-navbar-right">
               <ul class="uk-navbar-nav" >
-                <li><a href="http://localhost/web212/home/index"><span class="nav-btn" >TRANG CHỦ</span></a></li>
+                <li><a href="http://localhost/web212/home/index"><span class="nav-btn">TRANG CHỦ</span></a></li>
                 <li><a href="http://localhost/web212/home/catalog"><span class="nav-btn">SẢN PHẨM</span></a></li>
                 <li><a href="http://localhost/web212/news/index"><span class="nav-btn">TIN TỨC</span></a></li>
                 <li><a href="http://localhost/web212/home/contact"><span class="nav-btn">LIÊN HỆ</span></a></li>
