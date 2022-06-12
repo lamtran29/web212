@@ -351,10 +351,13 @@ INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`
 
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
-(2, 'Lam', 'lmtran29@gmail.com', '0123456789', '123456', 'admin');
+(1, 'Admin', 'admin@gmail.com', '0123456789', '123456', 'admin');
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
-(1, 'Hoa', 'hoatran@gmail.com', '0123456789', '123456', 'admin');
+(7, 'Lam', 'lmtran29@gmail.com', '0123456789', '123456', 'admin');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(2, 'Hoa', 'hoatran@gmail.com', '0123456789', '123456', 'admin');
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
 (4, 'Phong', 'phongnguyen@gmail.com', '0123456789', '123456', 'admin');
