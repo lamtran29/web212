@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
         $_SESSION["role"] = $row['role'];
         $_SESSION["id"] = $row['user_id'];
         $_SESSION["name"] = $row['user_name'];
+        $_SESSION["phone"] = $row['phone'];
 
         if (isset($_SESSION["email"])) {        
             if ($row['role'] == "admin")

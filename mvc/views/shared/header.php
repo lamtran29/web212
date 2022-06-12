@@ -27,7 +27,7 @@
                   <li><a href="http://localhost/web212/home/cart"><span class="text-white" data-uk-icon="cart"></span></a></li>
                   <?php
                     if (isset($_SESSION['id'])){
-                      echo "<li><a href='http://localhost/web212/User/sign_in'><span class='text-white' data-uk-icon='user'></span></a></li>
+                      echo "<li><a href='http://localhost/web212/home/account'><span class='text-white' data-uk-icon='user'></span></a></li>
                         <li><a href='http://localhost/web212/User/log_out'><span class='text-white' data-uk-icon='sign-out'></span></a></li>";
                     }
                   ?>

@@ -30,6 +30,12 @@
             $layout = $this->view("layouts/application", ["page"=>"application/home/cart", "header"=>"shared/header", "footer"=>"shared/footer"]);
             echo $layout;
         }
+        
+        function account(){
+            $user = $this->modal("userModal");
+            $layout = $this->view("layouts/application", ["page"=>"application/home/account", "header"=>"shared/header", "footer"=>"shared/footer", "userModal"=>$user]);
+            echo $layout;
+        }
 
         function payment($price){
             $order = $this->modal("OrderModal");
@@ -42,5 +48,7 @@
             $layout = $this->view("layouts/application", ["page"=>"application/home/success", "header"=>"shared/header", "footer"=>"shared/footer","oid"=>$oid, "uid"=>$uid,"date"=>$datetime, "price"=>$price, "name"=>$name, "email"=>$email, "phone"=>$phone, "address"=>$address,"orderModal"=>$order]);
             echo $layout;
         }
+        
+        
     }
 ?>
