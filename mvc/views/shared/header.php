@@ -12,6 +12,14 @@
             <div class="uk-navbar-right">
               <div class="other-links">
                 <ul class="other-links-list">
+                  <li>
+                    <?php
+                      if (isset($_SESSION['id'])){
+                        echo "Xin chào, " . $_SESSION['name'];
+                        echo "<span style='margin: 0 12px'> | </span>";
+                      }
+                      ?>
+                  </li>
                   <li><a href="#modal-full" data-uk-toggle><span class="text-white" data-uk-icon="search"></span></a></li>
                   <li><a href="http://localhost/web212/User/sign_in"><span class="text-white" data-uk-icon="user"></span></a></li>
                   <li><a href="http://localhost/web212/home/cart"><span class="text-white" data-uk-icon="cart"></span></a></li>
