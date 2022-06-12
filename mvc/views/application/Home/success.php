@@ -11,7 +11,7 @@
         $conn=$data["orderModal"]->con;
         $query = "INSERT INTO orderr (order_id, customer_id, order_date, total_price, address, phone, email, name) VALUES (N'$oid', N'$uid', N'$date', N'$price', N'$address', N'$phone', N'$email', N'$name');";
         if($conn->query($query)){
-            echo "<script type='text/javascript'>alert('Đặt hàng thành công');
+            echo "<script type='text/javascript'>alert('Đặt hàng thành công. Mã đơn hàng của quý khách là #".  $oid  . ". Cảm ơn quý khách rất nhiều.');
             localStorage.clear();
             window.location.href = 'http://localhost/web212/';
           </script>";

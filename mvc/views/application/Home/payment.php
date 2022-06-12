@@ -91,7 +91,7 @@
     function getOrder(){
    
       var btn = document.getElementById('cod-payment');
-      btn.href = 'http://localhost/web212/Home/test/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
+      btn.href = 'http://localhost/web212/Home/success/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
 
       // let productItem = localStorage.getItem('productItem');
       // productItem = JSON.parse(productItem);
@@ -117,7 +117,7 @@
         onApprove: function (data, actions){
             return actions.order.capture().then(function(orderData){
                 var transaction = orderData.purchase_units[0].payments.captures[0];
-                window.location.href = 'http://localhost/web212/Home/test/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
+                window.location.href = 'http://localhost/web212/Home/success/'+orderID+"/" +userID+"/" +datetime+"/" +price+"/" +name+"/"+email+"/" +phone+"/"+address;
             });
         },
 

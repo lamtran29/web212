@@ -14,16 +14,23 @@
                 <ul class="other-links-list">
                   <li>
                     <?php
+                      // $logged = 
                       if (isset($_SESSION['id'])){
                         echo "Xin chào, " . $_SESSION['name'];
-                        echo "<span style='margin: 0 12px'> | </span>";
                       }
+                      else echo "Bạn đang xem với tư cách Khách. <a style='color: white; font-weight: bold' href='http://localhost/web212/User/sign_in'>Đăng nhập ngay</a>";
+                      
+                      echo "<span style='margin: 0 12px'> | </span>";
                       ?>
                   </li>
                   <li><a href="#modal-full" data-uk-toggle><span class="text-white" data-uk-icon="search"></span></a></li>
-                  <li><a href="http://localhost/web212/User/sign_in"><span class="text-white" data-uk-icon="user"></span></a></li>
                   <li><a href="http://localhost/web212/home/cart"><span class="text-white" data-uk-icon="cart"></span></a></li>
-                  <li><a href="http://localhost/web212/User/log_out"><span class="text-white" data-uk-icon="sign-out"></span></a></li>
+                  <?php
+                    if (isset($_SESSION['id'])){
+                      echo "<li><a href='http://localhost/web212/User/sign_in'><span class='text-white' data-uk-icon='user'></span></a></li>
+                        <li><a href='http://localhost/web212/User/log_out'><span class='text-white' data-uk-icon='sign-out'></span></a></li>";
+                    }
+                  ?>
                 </ul>
               </div>
             </div>

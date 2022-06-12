@@ -137,7 +137,7 @@
                         <input class="uk-input" id="phone" type="number" placeholder="Số điện thoại nhận hàng" value="" style="margin-top: 5px;">
                         <input class="uk-input" id="address" type="text" placeholder="Địa chỉ nhận hàng" value="" style="margin-top: 5px;"><br>
                     </div>
-                    <div style="text-align: left; font-size: 18px">
+                    <div style="text-align: left; font-size: 20px">
                         <h2 style="margin: 0;"><b>Phương thức thanh toán</b></h2> <br> 
 
                         <input type="radio" id="cod" name="payment" value="cod" required>
@@ -277,10 +277,10 @@ let selectedItem = {
             if (myProduct === undefined){
                 container.innerHTML += ''
                     + '<div class="product product__' + item.tag + '">'
-                    + '<h3 class="product__title">' + '<img class="product__img" src="' + item.img_src + '">' + item.name + '</h3>'
-                    + '<h3 class="product__price">' + item.price + '</h3>'
-                    + '<h3 class="product__quantity">' + '<span class="counter" style = "font-style: normal;"><span class="minus" onclick="MinusBtn(\'' + item.tag + '\')">-</span><input type="text" value="' + item.quantity + '" /><span onclick="PlusBtn(\'' + item.tag + '\')" class="plus">+</span></span>' + '</h3>'
-                    + '<h3 class="product__total">'+ item.price * item.quantity + '<a onclick="CloseBtn(\'' + item.tag + '\')" class = "product__close"> <img src="https://img.icons8.com/ios-glyphs/30/ffffff/macos-close.png"/> </a>' + '</h3>'
+                    + '<h5 class="product__title">' + '<img class="product__img" src="' + item.img_src + '">' + item.name + '</h5>'
+                    + '<h5 class="product__price">' + item.price + '</h5>'
+                    + '<h5 class="product__quantity">' + '<span class="counter" style = "font-style: normal;"><span class="minus" onclick="MinusBtn(\'' + item.tag + '\')">-</span><input type="text" value="' + item.quantity + '" /><span onclick="PlusBtn(\'' + item.tag + '\')" class="plus">+</span></span>' + '</h5>'
+                    + '<h5 class="product__total">'+ item.price * item.quantity + '<a onclick="CloseBtn(\'' + item.tag + '\')" class = "product__close"> <img src="https://img.icons8.com/ios-glyphs/30/ffffff/macos-close.png"/> </a>' + '</h5>'
                     + '</div>';
             }
             else {
