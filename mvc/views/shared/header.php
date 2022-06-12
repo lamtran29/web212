@@ -18,7 +18,7 @@
                       if (isset($_SESSION['id'])){
                         echo "Xin chào, " . $_SESSION['name'];
                       }
-                      else echo "Bạn đang xem với tư cách Khách. <a style='color: white; font-weight: bold' href='http://localhost/web212/User/sign_in'>Đăng nhập ngay</a>";
+                      else echo "<a style='color: white; font-weight: bold' href='http://localhost/web212/User/sign_in'>Đăng nhập</a>";
                       
                       echo "<span style='margin: 0 12px'> | </span>";
                       ?>

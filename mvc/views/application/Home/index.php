@@ -46,44 +46,46 @@
                 Từ các loại trái cây, rau củ tươi xanh đến các loại thịt, thủy hải sản
             </p>
         </div>
-
-        <div class="category-cards row">
-            <div class="category-card col">
-                <a href="http://localhost/web212/home/catalog">
-                    <div class="category-img">
-                        <img src="../../../web212/public/assets/img/pages/home/vegetables.png" alt="">
-                    </div>
-                    <h5 class="name"><b>Rau củ quả</b></h5>
-                </a>
-            </div>
-            
-            <div class="category-card col">
-                <a href="http://localhost/web212/home/catalog">
-                    <div class="category-img">
-                        <img src="../../../web212/public/assets/img/pages/home/fruit.png" alt="">
-                    </div>
-                    <h5 class="name"><b>Trái cây</b></h5>
-                </a>
-            </div>
-            
-            <div class="category-card col">
-                <a href="http://localhost/web212/home/catalog">
-                    <div class="category-img">
-                        <img src="../../../web212/public/assets/img/pages/home/meat.png" alt="">
-                    </div>
-                    <h5 class="name"><b>Các loại thịt</b></h5>
-                </a>
-            </div>
-            
-            <div class="category-card col">
-                <a href="http://localhost/web212/home/catalog">
-                    <div class="category-img">
-                        <img src="../../../web212/public/assets/img/pages/home/seafood.png" alt="">
-                    </div>
-                    <h5 class="name"><b>Hải sản</b></h5>
-                </a>
-            </div>
-            
+        <div class="uk-container">
+          <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>    
+            <!-- <div class="category-cards row"> -->
+                <li class="category-card" style="text-align: center;">
+                    <a href="http://localhost/web212/home/catalog">
+                        <div class="category-img">
+                            <img src="../../../web212/public/assets/img/pages/home/vegetables.png" alt="">
+                        </div>
+                        <h5 class="name"><b>Rau củ quả</b></h5>
+                    </a>
+                </li>
+                
+                <li class="category-card" style="text-align: center;">
+                    <a href="http://localhost/web212/home/catalog">
+                        <div class="category-img">
+                            <img src="../../../web212/public/assets/img/pages/home/fruit.png" alt="">
+                        </div>
+                        <h5 class="name"><b>Trái cây</b></h5>
+                    </a>
+                </li>
+                <li class="category-card" style="text-align: center;">
+                    <a href="http://localhost/web212/home/catalog">
+                        <div class="category-img">
+                            <img src="../../../web212/public/assets/img/pages/home/meat.png" alt="">
+                        </div>
+                        <h5 class="name"><b>Các loại thịt</b></h5>
+                    </a>
+                </li>
+                
+                <li class="category-card" style="text-align: center;">
+                    <a href="http://localhost/web212/home/catalog">
+                        <div class="category-img">
+                            <img src="../../../web212/public/assets/img/pages/home/seafood.png" alt="">
+                        </div>
+                        <h5 class="name"><b>Hải sản</b></h5>
+                    </a>
+                </li>
+                
+            <!-- </div> -->
+          </ul>
         </div>
     </div>
     <!-- ====================================================================== -->      
@@ -95,7 +97,7 @@
             </p>
         </div>
       <div class="uk-container">
-        <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" data-uk-grid>
+        <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>
             <?php 
             $i = 0;
             $fruit = array();
@@ -233,7 +235,7 @@
             
             <h3><b>Sản phẩm liên quan</b></h3>
             <div class="uk-container">
-              <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" data-uk-grid>
+              <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>
                 <?php 
                   $i = 0;
                   foreach($fruit as $row){

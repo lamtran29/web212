@@ -6236,7 +6236,7 @@ body.dm-light .pan-loader .shadow {
 }
 
 .category .category-cards {
-    padding: 0 112px;
+    /* padding: 0 0px; */
     width: 100%;
 }
 
