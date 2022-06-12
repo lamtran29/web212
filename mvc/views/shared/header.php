@@ -15,7 +15,7 @@
                   <li>
                     <?php
                       // $logged = 
-                      if (isset($_SESSION['id'])){
+                      if (isset($_SESSION['name'])){
                         echo "Xin chào, " . $_SESSION['name'];
                       }
                       else echo "<a style='color: white; font-weight: bold' href='http://localhost/web212/User/sign_in'>Đăng nhập</a>";
