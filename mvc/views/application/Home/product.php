@@ -34,7 +34,7 @@
               <div>
                 <div class="product-full-card__gallery">
                   <div class="product-full-card__gallery-box">
-                    <li class="uk-flex uk-flex-center uk-flex-middle"><img src="../../../web212/public/assets/img/<?php echo $row["avatar"] ?>" id="product-picture" alt="skin1"></li>
+                    <li class="uk-flex uk-flex-center uk-flex-middle"><img src="../../../web212/public/assets/img/<?php echo $row["avatar"] ?>" id="product-picture" alt="<?php echo $row["avatar"] ?>"></li>
                   </div>
                 </div>
               </div>

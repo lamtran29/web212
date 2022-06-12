@@ -8,13 +8,48 @@
             $price = $_POST['price'];
             $category_id = $_POST['category_id'];
             $intro = $_POST['intro'];
-            $avatar = "/products/$id.png";
+            // $avatar = "/products/$id.png";
             
-                if ($quantity <= 0 || $price <=0){
-                    echo "<script type='text/javascript'>alert('cap nhat product that bai');
-                    window.location.href = 'http://localhost/web212/product/index';
-                    </script>";
+
+            $allowedExts = array("jpg", "jpeg", "gif", "png");
+            $nameParts = explode(".", $_FILES["file"]["name"]);
+            $extension = end($nameParts);
+
+            if ((($_FILES["file"]["type"] == "image/gif")
+                    || ($_FILES["file"]["type"] == "image/jpeg")
+                    || ($_FILES["file"]["type"] == "image/png")
+                    || ($_FILES["file"]["type"] == "image/pjpeg"))
+                    && ($_FILES["file"]["size"] < 2000000)
+                    && in_array($extension, $allowedExts)) {
+
+                if ($_FILES["file"]["error"] > 0) {
+                    echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
                 }
+
+                else {
+                    if (file_exists("upload/" . $_FILES["file"]["name"])) {
+                        echo "<script>alert('" . $_FILES["file"]["name"] . " already exists.')</script>";
+                    }
+                    else {
+                        move_uploaded_file($_FILES['file']['tmp_name'], 'upload/' . basename($_FILES['file']['name']));
+                        $File = $_FILES["file"]["name"];
+                        $avatar = "/products/$File";
+                    }
+                }
+            }
+            else {
+                echo "<script>alert('Invalid File')</script>";
+            }
+
+
+
+
+
+            if ($quantity <= 0 || $price <=0){
+                echo "<script type='text/javascript'>alert('cap nhat product that bai');
+                window.location.href = 'http://localhost/web212/product/index';
+                </script>";
+            }
 
             if (!isset($data["id"])) {
                 if (($data["productModal"]->con)->query("INSERT INTO product (product_id,product_name,quantity,price,avatar,category_id, intro) VALUES (N'$id', N'$name',N'$quantity',N'$price', N'$avatar', N'$category_id',N'$intro')")) {
@@ -43,7 +78,7 @@
         if (isset($data["product"])) {
             while ($row = mysqli_fetch_assoc($data["product"])) {
         ?>
-                <form method="POST" action="">
+                <form method="POST" action="" enctype="multipart/form-data">
                     <div class="row form-group">
                         <label for="id" class="col-sm-2 col-form-label input-label">id</label>
                         <div class="col-sm-10">
@@ -84,6 +119,14 @@
                             <input type="text" name="intro" class="form-control" placeholder="Please input intro" value="<?php echo $row["intro"] ?>" required="true">
                         </div>
                     </div>
+
+                    <div class="row form-group">
+                        <label for="file" class="col-sm-2 col-form-label input-label">Filename:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="file" name="file">
+                        </div>
+                    </div>  
+
                     <div class="d-flex justify-content-end">
                         <input type="submit" value="Save changes" class="btn btn-primary" name="submit">
                     </div>
@@ -93,7 +136,7 @@
         }
         else{
         ?>
-                        <form method="POST" action="">
+                        <form method="POST" action="" enctype="multipart/form-data">
                     <div class="row form-group">
                         <label for="id" class="col-sm-2 col-form-label input-label">id</label>
                         <div class="col-sm-10">
@@ -134,6 +177,13 @@
                             <input type="text" name="intro" class="form-control" placeholder="Please input intro"  required="true">
                         </div>
                     </div>
+
+                    <div class="row form-group">
+                        <label for="file" class="col-sm-2 col-form-label input-label">Filename:</label>
+                        <div class="col-sm-10">
+                            <input class="form-control" type="file" name="file">
+                        </div>
+                    </div>  
 
                     <div class="d-flex justify-content-end">
                         <input type="submit" value="Save changes" class="btn btn-primary" name="submit">
