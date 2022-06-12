@@ -38,7 +38,7 @@
                 }
             }
             else {
-                echo "<script>alert('Invalid File')</script>";
+                // echo "<script>alert('Invalid File')</script>";
             }
 
 
