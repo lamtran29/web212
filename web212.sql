@@ -59,7 +59,7 @@ CREATE TABLE `customer` (
 
 INSERT INTO `customer` (`customer_id`, `customer_name`) VALUES
 (101, 'PHAN NGỌC YẾN NHI'),
-(102, 'NGUYỄN TRẦN MINH HUỆ '),
+(102, 'NGUYỄN TRẦN MINH HUỆ'),
 (103, 'LÊ HOÀNG NAM'),
 (104, 'LÊ THỊ TẾT'),
 (105, 'LÊ THỊ NGỌC THANH'),
@@ -86,7 +86,7 @@ INSERT INTO `customer` (`customer_id`, `customer_name`) VALUES
 (126, 'PHAN THỊ HỒNG PHƯỢNG'),
 (127, 'NGUYỄN HOÀNG GIANG'),
 (128, 'ĐẶNG QUỐC TOÀN'),
-(129, ' HỒ THỊ CẢNH'),
+(129, 'HỒ THỊ CẢNH'),
 (130, 'TRƯƠNG THỊ AN'),
 (131, 'ĐỖ THỊ THÚY KIỀU'),
 (132, 'NGUYỄN THANH QUỐC HƯNG'),
@@ -105,7 +105,7 @@ INSERT INTO `customer` (`customer_id`, `customer_name`) VALUES
 (145, 'NGUYỄN VÕ HOÀNG PHÚC'),
 (146, 'NGUYỄN THỊ THANH'),
 (147, 'NGUYỄN THỊ TÁM'),
-(148, 'NGUYỄN VĂM MƯỜI'),
+(148, 'NGUYỄN VĂN MƯỜI'),
 (149, 'VÕ NGUYỄN BẢO NGỌC'),
 (150, 'VÕ VĂN TRƯỜNG');
 
@@ -197,6 +197,157 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
 (3, 'Customer', 'customer@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(101, 'PHAN NGỌC YẾN NHI', 'phanngocyennhi@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(102, 'NGUYỄN TRẦN MINH HUỆ', 'nguyentranminhhue@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(103, 'LÊ HOÀNG NAM', 'lehoangnam@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(104, 'LÊ THỊ TẾT', 'lethitet@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(105, 'LÊ THỊ NGỌC THANH', 'lethingocthanh@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(106, 'NGUYỄN THỊ THÚY LOAN', 'nguyenthithuyloan@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(107, 'NGUYỄN THỊ KIM HOÀNG', 'nguyenthikimhoang@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(108, 'NGUYỄN THỊ KIM YẾN', 'nguyenthikimyen@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(109, 'HUỲNH VĂN ẢNH', 'huynhvananh@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(110, 'NGUYỄN TẤN DƯƠNG', 'nguyentanduong@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(111, 'LÊ VẠN PHƯỚC', 'levanphuoc@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(112, 'NGUYỄN THANH TÀI', 'nguyenthanhtai@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(113, 'LÊ NGỌC LỜI', 'lengocloi@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(114, 'LÊ NGUYỄN HÙNG PHONG', 'lenguyenhungphong@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(115, 'NGUYỄN THANH YẾN VY', 'nguyenthanhyenvy@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(116, 'HUỲNH VĂN CHÍNH', 'huynhvanchinh@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(117, 'PHẠM MỸ XƯƠNG', 'phammyxuong@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(118, 'VĂN CÔNG ĐỂ', 'vancongde@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(119, 'HUỲNH THỊ THANH GIẶP', 'huynhthithanhgiap@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(120, 'HUỲNH CÔNG LIÊM', 'huynhcongliem@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(121, 'ĐĂNG NGỌC THANH TÂM', 'dangngocthanhtam@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(122, 'CAO THỊ NGUYỆT', 'caothinguyet@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(123, 'PHẠM THỊ ÁNH LOAN', 'phanthianhloan@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(124, 'ĐẶNG LỆ HÀ', 'dangleha@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(125, 'GIANG HÙNG ĐẠT', 'gianhhungdat@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(126, 'PHAN THỊ HỒNG PHƯỢNG', 'phanthihongphuong@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(127, 'NGUYỄN HOÀNG GIANG', 'nguyenhoanggiang@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(128, 'ĐẶNG QUỐC TOÀN', 'dangquoctoan@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(129, 'HỒ THỊ CẢNH', 'hothicanh@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(130, 'TRƯƠNG THỊ AN', 'truongthian@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(131, 'ĐỖ THỊ THÚY KIỀU', 'dothithuykieu@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(132, 'NGUYỄN THANH QUỐC HƯNG', 'nguyenthanhquochung@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(133, 'HUỲNH THỊ ÚT', 'huynhthiut@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(134, 'NGUYỄN HOÀ̀NG KHÁNH DUY', 'nguyenhoangkhanhduy@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(135, 'NGUYỄN THỊ BẢY', 'nguyenthibay@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(136, 'HUỲNH NGỌC HƯNG', 'huynhngochung@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(137, 'TRƯƠNG HOÀNG THÁI', 'truonghoangthai@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(138, 'NGUYỄN THỊ BÍCH DU', 'nguyenthibichdu@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(139, 'LÊ VÕ TUẤN AN', 'levotuanan@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(140, 'PHẠM VĂN HỌC', 'phamvanhoc@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(141, 'VÕ THỊ PHƯƠNG NAM', 'vothiphuongnam@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(142, 'LÊ NGỌ̣C THƯƠNG', 'lengocthuong@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(143, 'HUỲNH TẤN KHƯƠNG', 'huynhtankhuong@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(144, 'VÕ THỊ HOÀNG', 'vothihoang@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(145, 'NGUYỄN VÕ HOÀNG PHÚC', 'nguyenvohoangphuc@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(146, 'NGUYỄN THỊ THANH', 'nguyenthithanh@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(147, 'NGUYỄN THỊ TÁM', 'nguyenthitam@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(148, 'NGUYỄN VĂN MƯỜI', 'nguyenvanmuoi@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(149, 'VÕ NGUYỄN BẢO NGỌC', 'vonguyenbaongoc@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(150, 'VÕ VĂN TRƯỜNG', 'vovantruong@gmail.com', '0123156789', '123456', 'customer');
+
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
 (2, 'Lam', 'lmtran29@gmail.com', '0123456789', '123456', 'admin');
