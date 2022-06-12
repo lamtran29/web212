@@ -7,4 +7,4 @@
 * **Open** [phpmyadmin](http://localhost/phpmyadmin/server_databases.php) in browser and create a new database called `web212`.
 * **Go** to your cloned project directory. Import file `web212.sql` to the database.
 * **User view:** visit [http://localhost/web212/](http://localhost/web212/) to open the project.
-* **Admin view** visit [http://localhost/web212/category/](http://localhost/web212/category/index) and sign in with email: 'admin@gmail.com' and password: '123456'.
+* **Admin view:** visit [http://localhost/web212/category/](http://localhost/web212/category/index) and sign in with email: 'admin@gmail.com' and password: '123456'.
