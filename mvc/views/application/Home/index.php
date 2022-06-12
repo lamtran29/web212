@@ -115,7 +115,7 @@
                         <a href="http://localhost/web212/home/product/<?php echo $row["product_id"] ?>" style="text-decoration: none;">
                           <div class="product-item__not-active">
                             <div class="product-item__media">
-                              <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="product-zoom" style="height: 100%; width:100%; object-fit: cover;" src="../../../web212/public/assets/img<?php echo $row["avatar"] ?>" alt="Skin 1" /></div>
+                              <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="product-zoom" style="height: 100%; width:100%; object-fit: cover;" src="../../../web212/public/assets/img<?php echo $row["avatar"] ?>?t=123" alt="Skin 1" /></div>
                             </div>
                             <div class="product-item__title"><?php echo $row["product_name"] ?></div>
                           </div>
@@ -249,7 +249,7 @@
                         <a href="http://localhost/web212/home/product/<?php echo $row["product_id"] ?>" style="text-decoration: none;">
                           <div class="product-item__not-active">
                             <div class="product-item__media">
-                              <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="product-zoom" style="height: 100%; width:100%; object-fit: cover;" src="../../../web212/public/assets/img<?php echo $row["avatar"] ?>" alt="Skin 1" /></div>
+                              <div class="uk-inline-clip uk-transition-toggle uk-light" data-uk-lightbox="data-uk-lightbox"><img class="product-zoom" style="height: 100%; width:100%; object-fit: cover;" src="../../../web212/public/assets/img<?php echo $row["avatar"] ?>?t=123" alt="Skin 1" /></div>
                             </div>
                             <div class="product-item__title"><?php echo $row["product_name"] ?></div>
                           </div>

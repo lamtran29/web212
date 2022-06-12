@@ -34,7 +34,13 @@
               <div>
                 <div class="product-full-card__gallery">
                   <div class="product-full-card__gallery-box">
-                    <li class="uk-flex uk-flex-center uk-flex-middle"><img src="../../../web212/public/assets/img/<?php echo $row["avatar"] ?>" id="product-picture" alt="<?php echo $row["avatar"] ?>"></li>
+                    <div class="uk-flex uk-flex-center uk-flex-middle">
+                      <div class="adjust-height" style="height: 500px;">
+                        <img src="../../../web212/public/assets/img/<?php echo $row["avatar"] ?>?t=123" 
+                              id="product-picture" alt="<?php echo $row["avatar"] ?>?t=123"
+                              style="height: 100%; object-fit: cover; margin: 0;">
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
