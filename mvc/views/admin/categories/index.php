@@ -10,7 +10,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     <div class="col-sm mb-2 mb-sm-0">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb breadcrumb-no-gutter">
-          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost/web212/Category/index"></a></li>
+          <li class="breadcrumb-item"><a class="breadcrumb-link" href="http://localhost/web212/category/index"></a></li>
           <!-- icon home -->
           <li class="breadcrumb-item active" aria-current="page">Categories</li>
         </ol>

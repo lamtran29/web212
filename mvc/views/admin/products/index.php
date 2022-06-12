@@ -35,7 +35,6 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
         <th>Price</th>        
         <th>Quantity</th>
         <th>Intro</th>
-        <th>Hướng dẫn sử dụng</th>
         <th colspan="2"></th>
       </tr>
       </thead>
@@ -56,9 +55,8 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
           <td><?php echo $row["price"] ?></td>
           <td><?php echo $row["quantity"] ?></td>
           <td><?php echo $row["intro"] ?></td>
-          <td><?php echo $row["huongdansudung"] ?></td>
-          <td><a href="http://localhost/web212/Product/edit/<?php echo $row["product_id"] ?>">Edit</td>
-          <td><a href="http://localhost/web212/Product/delete/<?php echo $row["product_id"] ?>">Delete</td>
+          <td><a href="http://localhost/web212/product/edit/<?php echo $row["product_id"] ?>">Edit</td>
+          <td><a href="http://localhost/web212/product/delete/<?php echo $row["product_id"] ?>">Delete</td>
         </tr>
       <?php 
         }

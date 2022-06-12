@@ -11,11 +11,11 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <title>Cocoon Admin</title>
+    <title>FreshGro Admin</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="../../../web212/public/assets/img/favicon-freshgro.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../web212/public/assets/css/theme_admin.css">
-
   </head>
 
   <body class="footer-offset has-navbar-vertical-aside navbar-vertical-aside-show-xl">
