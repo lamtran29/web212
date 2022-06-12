@@ -1,7 +1,7 @@
 <div class="footer">
     <hr>
     <div class="footer-logo">
-        <img src="../../../web212/public/assets/img/footer-logo.png" alt="logo">
+        <img src="../../../web212/public/assets/img/footer-freshgro.png" alt="logo">
     </div>
     <p>Theo dõi chúng tôi qua</p>
     <div class="socialmedia">

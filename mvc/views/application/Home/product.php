@@ -150,10 +150,10 @@
                         <article class="uk-comment">
                             <header class="uk-comment-header">
                                 <div class="uk-grid-small uk-grid-divider" data-uk-grid>
-                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web212/public/assets/img/pages/home/feedback_1.png" alt></div>
+                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web212/public/assets/img/pages/home/fp1.png" alt></div>
                                     <div class="uk-width-expand@s">
                                         <div class="uk-flex uk-flex-middle uk-margin-small-bottom">
-                                            <h4 class="uk-comment-title uk-margin-remove">Nguyễn Tiến Thịnh</h4><span class="uk-text-meta uk-margin-small-left">August 20, 2021</span>
+                                            <h4 class="uk-comment-title uk-margin-remove">Nguyễn Văn A</h4><span class="uk-text-meta uk-margin-small-left">August 20, 2021</span>
                                         </div>
                                         <div class="uk-comment-body">
                                         <p>Chất lượng rất tuyệt vời</p>
@@ -167,10 +167,10 @@
                         <article class="uk-comment">
                             <header class="uk-comment-header">
                                 <div class="uk-grid-small uk-grid-divider" data-uk-grid>
-                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web212/public/assets/img/pages/home/feedback_2.png" alt></div>
+                                    <div class="uk-width-auto@s"><img class="uk-comment-avatar" src="../../../web212/public/assets/img/pages/home/fp2.png" alt></div>
                                     <div class="uk-width-expand@s">
                                         <div class="uk-flex uk-flex-middle uk-margin-small-bottom">
-                                            <h4 class="uk-comment-title uk-margin-remove">Lê Trần Hoàng Thanh</h4><span class="uk-text-meta uk-margin-small-left">August 20, 2020</span>
+                                            <h4 class="uk-comment-title uk-margin-remove">Nguyễn Thị B</h4><span class="uk-text-meta uk-margin-small-left">August 20, 2020</span>
                                         </div>
                                         <div class="uk-comment-body">
                                         <p>Tối rất thích</p>
@@ -183,16 +183,15 @@
                   </ul>
                   <div class="block-form uk-margin-medium-top">
                     <div class="section-title">
-                      <div class="uk-h2">Leave a Reply</div>
+                      <div class="uk-h2">Để lại đánh giá của bạn</div>
                     </div>
                     <div class="section-content">
-                      <p>Your email address will not be published. Required fields are marked *</p>
                       <form action="#!">
                         <div class="uk-grid uk-grid-small uk-child-width-1-2@s" data-uk-grid>
-                          <div><input class="uk-input uk-form-large" type="text" placeholder="Your Name *"></div>
+                          <div><input class="uk-input uk-form-large" type="text" placeholder="Tên *"></div>
                           <div><input class="uk-input uk-form-large" type="text" placeholder="Email *"></div>
-                          <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large" placeholder="Reviews *"></textarea></div>
-                          <div><button class="uk-button uk-button-large" type="submit">Post Review</button></div>
+                          <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large" placeholder="Đánh giá *"></textarea></div>
+                          <div><button class="uk-button uk-button-large" type="submit">Gửi đánh giá</button></div>
                         </div>
                       </form>
                     </div>
@@ -226,7 +225,8 @@ let selectedItem = {
 
 
 
-function AddToCart(){
+function AddToCart(){                              
+
     let productNumber = localStorage.getItem('productNumber');
     productNumber = parseInt(productNumber);
   
@@ -242,6 +242,7 @@ function AddToCart(){
     imgCanvas.width = img.width;
     imgCanvas.height = img.height;
     imgContext.drawImage(img, 0, 0, img.width, img.height);
+    
     var imgAsDataURL = imgCanvas.toDataURL("");
 
     selectedItem.img_src = imgAsDataURL;                                                                // store image to selectedItem
@@ -271,7 +272,7 @@ function AddToCart(){
 
     localStorage.setItem('productItem', JSON.stringify(productItem));
 
-    alert("Đã thêm vào giỏ hàng");
+    alert("Đã thêm vào giỏ hàng");                                    
 }
 
 

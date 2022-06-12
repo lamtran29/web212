@@ -7,4 +7,4 @@
 * **Open** [phpmyadmin](http://localhost/phpmyadmin/server_databases.php) in browser and create a new database called `web212`.
 * **Go** to your cloned project directory. Import file `web212.sql` to the database.
 * **Now** going to [http://localhost/assigment/](http://localhost/assigment/) to open the project.
-* **Admin view** going to [http://localhost/web212/Category/](http://localhost/web212/Category/index) to open the project.
+* **Admin view** going to [http://localhost/assignment/Category/](http://localhost/assignment/Category/index) to open the project.

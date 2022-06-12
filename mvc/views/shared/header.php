@@ -31,13 +31,13 @@
           <div class="uk-navbar-left">
             <button class="uk-button" type="button" data-target="#offcanvas" data-uk-toggle data-uk-icon="menu"></button>
               <a href="http://localhost/web212/home/index"> 
-                    <img class="logo__img logo__img--full" src="../../../web212/public/assets/img/cocoon-text-logo.png" alt="logo">
+                    <img class="logo__img logo__img--full" src="../../../web212/public/assets/img/header-freshgro.png" alt="logo">
               </a>
             </div>
 
             <div class="uk-navbar-center">
               <a href="http://localhost/web212/home/index"> 
-                <img class="logo__img logo__img-small" src="../../../web212/public/assets/img/cocoon-text-logo.png" alt="logo">
+                <img class="logo__img logo__img-small" src="../../../web212/public/assets/img/header-freshgro.png" alt="logo">
               </a>
             </div>
 

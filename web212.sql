@@ -37,11 +37,10 @@ CREATE TABLE `category` (
 --
 
 INSERT INTO `category` (`category_id`, `category_name`) VALUES
-(1, 'Chăm sóc da'),
-(2, 'Chăm sóc cơ thể'),
-(3, 'Chăm sóc tóc'),
-(4, 'Chăm sóc môi'),
-(5, '55555555');
+(1, 'Trái cây'),
+(2, 'Thịt'),
+(3, 'Rau củ quả'),
+(4, 'Thủy hải sản');
 
 -- --------------------------------------------------------
 
@@ -152,40 +151,30 @@ CREATE TABLE `product` (
   `price` int(11) DEFAULT NULL,
   `avatar` varchar(255) DEFAULT NULL,
   `category_id` int(11) DEFAULT NULL,
-  `intro` varchar(1000) DEFAULT NULL,
-  `huongdansudung` varchar(1000) DEFAULT NULL
+  `intro` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`product_id`, `product_name`, `quantity`, `price`, `avatar`, `category_id`, `intro`, `huongdansudung`) VALUES
-(1111, 'DUNG DỊCH CHẤM MỤN BÍ ĐAO 5ml', 10, 95000, '/products/1111.png', 1, 'Dung dịch chấm mụn từ bí đao kết hợp với tinh chất rau má, tràm trà và 2% axit salicylic giúp loại bỏ mụn trứng cá, giảm mụn sưng viêm nhanh chóng, làm mờ vết thâm, vết đỏ trên da và ngăn ngừa mụn trở lại.', 'Làm sạch da. Chấm một lớp mỏng dung dịch lên những điểm mụn từ 1-3 lần mỗi ngày. Sử dụng kết hợp với tinh chất bí đao để đạt hiệu quả tốt nhất.'),
-(1121, 'GEL BÍ ĐAO RỬA MẶT 140ml', 10, 175000, '/products/1121.png', 1, 'Sản phẩm chứa các thành phần tự nhiên gồm bí đao, rau má, tràm trà, bổ sung thêm Vitamin B3, B5, Betaine. Gel rửa mặt bí đao có pH 5.5 giúp làm sạch sâu bụi bẩn và dầu thừa, làm giảm việc hình thành mụn ẩn mà vẫn giữ được độ ẩm mịn tự nhiên và không gây khô da sau khi sử dụng.', 'Lấy một lượng vừa đủ mát-xa nhẹ nhàng trên da ướt. Rửa sạch lại với nước. Dùng buổi sáng và tối. '),
-(1122, 'GEL BÍ ĐAO RỬA MẶT 310ml', 10, 295000, '/products/1122.png', 1, 'Sản phẩm chứa các thành phần tự nhiên gồm bí đao, rau má, tràm trà, bổ sung thêm Vitamin B3, B5, Betaine. Gel rửa mặt bí đao có pH 5.5 giúp làm sạch sâu bụi bẩn và dầu thừa, làm giảm việc hình thành mụn ẩn mà vẫn giữ được độ ẩm mịn tự nhiên và không gây khô da sau khi sử dụng.', 'Lấy một lượng vừa đủ mát-xa nhẹ nhàng trên da ướt. Rửa sạch lại với nước. Dùng buổi sáng và tối. '),
-(1131, 'MẶT NẠ BÍ ĐAO WINTER MELON 30ml', 10, 115000, '/products/1131.png', 1, 'Sản phẩm gồm thành phần chính là bí đao thanh mát, bổ sung thêm rau má và tinh dầu tràm trà giúp giảm nhờn, làm thông thoáng lỗ chân lông, cải thiện nhanh tình trạng mụn, làm dịu vết đỏ, mang lại làn da sạch mụn và mịn màng.', 'Thoa đều một lượng vừa đủ trên da sạch, tránh vùng mắt, để 20 phút rồi rửa sạch với nước. Dùng 4-5 lần một tuần để đạt hiệu quả tốt nhất.'),
-(1132, 'MẶT NẠ BÍ ĐAO WINTER MELON 100ml', 10, 295000, '/products/1132.png', 1, 'Sản phẩm gồm thành phần chính là bí đao thanh mát, bổ sung thêm rau má và tinh dầu tràm trà giúp giảm nhờn, làm thông thoáng lỗ chân lông, cải thiện nhanh tình trạng mụn, làm dịu vết đỏ, mang lại làn da sạch mụn và mịn màng.', 'Thoa đều một lượng vừa đủ trên da sạch, tránh vùng mắt, để 20 phút rồi rửa sạch với nước. Dùng 4-5 lần một tuần để đạt hiệu quả tốt nhất.'),
-(1141, 'NƯỚC BÍ ĐAO CÂN BẰNG DA 140ml', 10, 175000, '/products/1141.png', 1, 'Sản phẩm chứa các thành phần tự nhiên gồm bí đao, chiết xuất rau má và tinh dầu tràm trà. Nước bí đao với công thức không chứa cồn có tác dụng cân bằng pH, giảm dầu nhờn, làm sạch lỗ chân lông, cải thiện rõ rệt tình trạng mụn ẩn. Ngoài ra nước bí đao còn được bổ sung thêm Vitamin B3, HA và chiết xuất cam thảo cung cấp độ ẩm giúp da luôn mịn màng và giảm thiểu các vết đỏ trên da.', 'Sau khi rửa mặt, lấy một lượng nước cân bằng vào lòng bàn tay, thoa đều lên da và vỗ nhẹ nhàng để sản phẩm thẩm thấu vào da. Có thể dùng kèm bông tẩy trang, lau nhẹ trên da theo hướng từ trong ra ngoài và từ dưới lên trên. Dùng buổi sáng và tối. Tránh tiếp xúc với mắt.'),
-(1142, 'NƯỚC BÍ ĐAO CÂN BẰNG DA 310ml', 10, 295000, '/products/1142.png', 1, 'Sản phẩm chứa các thành phần tự nhiên gồm bí đao, chiết xuất rau má và tinh dầu tràm trà. Nước bí đao với công thức không chứa cồn có tác dụng cân bằng pH, giảm dầu nhờn, làm sạch lỗ chân lông, cải thiện rõ rệt tình trạng mụn ẩn. Ngoài ra nước bí đao còn được bổ sung thêm Vitamin B3, HA và chiết xuất cam thảo cung cấp độ ẩm giúp da luôn mịn màng và giảm thiểu các vết đỏ trên da.', 'Sau khi rửa mặt, lấy một lượng nước cân bằng vào lòng bàn tay, thoa đều lên da và vỗ nhẹ nhàng để sản phẩm thẩm thấu vào da. Có thể dùng kèm bông tẩy trang, lau nhẹ trên da theo hướng từ trong ra ngoài và từ dưới lên trên. Dùng buổi sáng và tối. Tránh tiếp xúc với mắt.'),
-(1151, 'NƯỚC TẨY TRANG BÍ ĐAO 140ml', 10, 125000, '/products/1151.png', 1, 'Làn da dầu và mụn rất nhạy cảm nên cần được thiết kế một loại nước tẩy trang phù hợp. Với công nghệ Micellar, nước tẩy trang bí đao giúp làm sạch hiệu quả lớp trang điểm, bụi bẩn và dầu thừa, mang lại làn da sạch hoàn toàn và dịu nhẹ.', 'Thấm đều sản phẩm lên bông tẩy trang, nhẹ nhàng lau khắp mặt để làm sạch lớp trang điểm và bụi bẩn. Dịu nhẹ cho vùng môi và mắt.'),
-(1152, 'NƯỚC TẨY TRANG BÍ ĐAO 500ml', 10, 275000, '/products/1152.png', 1, 'Làn da dầu và mụn rất nhạy cảm nên cần được thiết kế một loại nước tẩy trang phù hợp. Với công nghệ Micellar, nước tẩy trang bí đao giúp làm sạch hiệu quả lớp trang điểm, bụi bẩn và dầu thừa, mang lại làn da sạch hoàn toàn và dịu nhẹ.', 'Thấm đều sản phẩm lên bông tẩy trang, nhẹ nhàng lau khắp mặt để làm sạch lớp trang điểm và bụi bẩn. Dịu nhẹ cho vùng môi và mắt.'),
-(1161, 'THẠCH BÍ ĐAO WINTER MELON 30ml', 10, 195000, '/products/1161.png', 1, 'Với sự kết hợp giữa chiết xuất bí đao thanh mát, 5α-AVOCUTA® được chưng cất phân tử từ dầu quả bơ và TECA™ trích ly từ rau má, thạch dưỡng bí đao với kết cấu mỏng nhẹ tan nhanh vào da giúp mang lại độ ẩm cân bằng, giảm lượng dầu thừa và cải thiện tình trạng mụn', 'Sản phẩm sử dụng sau bước tinh chất. Bạn thoa đều một lượng vừa đủ lên da mặt. Dùng 2 lần mỗi ngày, sáng và tối để đạt hiệu quả tốt nhất.'),
-(1162, 'THẠCH BÍ ĐAO WINTER MELON 100ml', 10, 385000, '/products/1162.png', 1, 'Với sự kết hợp giữa chiết xuất bí đao thanh mát, 5α-AVOCUTA® được chưng cất phân tử từ dầu quả bơ và TECA™ trích ly từ rau má, thạch dưỡng bí đao với kết cấu mỏng nhẹ tan nhanh vào da giúp mang lại độ ẩm cân bằng, giảm lượng dầu thừa và cải thiện tình trạng mụn', 'Sản phẩm sử dụng sau bước tinh chất. Bạn thoa đều một lượng vừa đủ lên da mặt. Dùng 2 lần mỗi ngày, sáng và tối để đạt hiệu quả tốt nhất.'),
-(1171, 'TINH CHẤT BÍ ĐAO 70ML', 10, 265000, '/products/1171.png', 1, 'Với các thành phần chủ đạo là bí đao thanh mát, bổ sung thêm 7% Niacinamide (Vitamin B3), TECA từ rau má và tinh dầu tràm trà, tinh chất bí đao sẽ phục hồi mạnh mẽ tình trạng mụn, kiểm soát bã nhờn, làm thông thoáng lỗ chân lông giúp giảm tình trạng mụn ẩn, cải thiện bề mặt da và làm mờ vết thâm.', 'Lấy vài giọt tinh chất vào lòng bàn tay, xoa đều và mát-xa lên da mặt sạch, tránh vùng mắt. Sử dụng sáng và tối.'),
-(2111, 'GEL TẮM BÍ ĐAO WINTER MELON 310ml', 10, 245000, '/products/2111.png', 2, 'Giúp da sạch mịn màng và giảm mụn lưng. Tinh dầu sả chanh giảm mùi cơ thể, tạo cảm giác sảng khoái, thư giãn. Sản phẩm dạng gel trong tạo bọt nhẹ nhàng và không gây khô da sau khi sử dụng.', 'Lấy sản phẩm vào lòng bàn tay hoặc miếng bọt biển, mát-xa nhẹ nhàng trên da ướt để tạo bọt. Tắm sạch lại với nước.'),
-(2211, 'BƠ DƯỠNG THỂ CÀ PHÊ ĐẮK LẮK 200ml', 10, 195000, '/products/2211.png', 2, 'Dầu cà phê Đắk Lắk rất giàu cafein, kết hợp với dầu mù u và bơ cacao, tất cả hòa quyện nên một thể bơ sánh mịn giúp dưỡng ẩm, làm mềm và chống oxi hóa, mang lại làn da cơ thể luôn mượt mà, tươi mới rạng rỡ.', 'Thoa đều lên cơ thể, mát-xa nhẹ nhàng theo chuyển động tròn đến khi sản phẩm thẩm thấu.'),
-(2221, 'DAK LAK COFFEE BODY POLISH 200ml', 10, 115000, '/products/2221.png', 2, 'Sản phẩm là sự kết hợp giữa hạt cà phê Đắk Lắk nguyên chất xay nhuyễn, hòa quyện cùng bơ cacao Tiền Giang giúp loại bỏ tế bào chết trên cơ thể hiệu quả, làm đều màu da, mang lại năng lượng, giúp da trở nên mềm mại và rạng rỡ.', 'Thoa một lượng sản phẩm lên da ướt. Mát-xa nhẹ nhàng từ cổ đến chân, sau đó tắm sạch lại với nước. Dùng 2-3 lần một tuần để đạt kết quả tốt nhất.'),
-(2311, 'GEL TẮM KHUYNH DIỆP & BẠC HÀ 500ml', 10, 165000, '/products/2311.png', 2, 'Vận dụng liệu pháp mùi hương từ tinh dầu khuynh diệp, bạc hà, kết hợp với vitamin B5 và hoạt chất dưỡng ẩm Betaine, Gel tắm sẽ làm sạch nhẹ nhàng và giữ cho làn da cơ thể luôn mềm mại, đồng thời giúp thư giãn, giải tỏa căng thẳng và mang lại một tinh thần thông suốt.', 'Lấy sản phẩm vào lòng bàn tay hoặc miếng bọt biển. Mát-xa nhẹ nhàng trên da ướt để tạo bọt. Tắm sạch lại với nước.'),
-(2321, 'NƯỚC RỬA TAY KHÔ 140ml', 10, 75000, '/products/2321.png', 2, 'Nước rửa tay dạng xịt tiện lợi, sạch khuẩn 99,9%, không gây khô da.', 'Xịt dung dịch vào lòng bàn tay, giữa các ngón tay rồi xoa đều đến khi khô. Không cần rửa lại với nước. Dùng khi cần để làm sạch khuẩn nhanh, sau khi tiếp xúc với động vật, sau khi đi vệ sinh. Có thể xịt lên vật dụng cá nhân để khử trùng.'),
-(2331, 'SỮA DƯỠNG THỂ  140ml', 10, 95000, '/products/2331.png', 2, 'Với cấu trúc mềm mịn, thẩm thấu nhanh và không nhờn rít, sữa dưỡng thể giúp nuôi dưỡng, cấp ẩm, đồng thời giúp thư giãn và mang lại làn da tươi mới.', 'Thoa sản phẩm lên cơ thể và mát - xa nhẹ nhàng cho đến khi dưỡng chất thẩm thấu'),
-(2341, 'XÀ PHÒNG RỬA TAY 45g', 10, 36000, '/products/2341.png', 2, 'Với dầu dừa, tinh dầu khuynh diệp, bạc hà và vitamin E, xà phòng rửa tay tạo bọt nhẹ nhàng giúp làm sạch vi khuẩn, bảo vệ đôi tay luôn sạch sẽ, thơm tho.', ' Dùng để rửa tay'),
-(3111, 'SA-CHI SERUM PHỤC HỒI TÓC 70ml', 10, 125000, '/products/3111.png', 3, 'Với dầu sa-chi, vitamin E, tinh dầu Hương Nhu và Phospholipid, serum có tác dụng phục hồi tóc hư tổn, bảo vệ mái tóc khỏi nhiệt và tia UV. Tóc luôn trong trạng thái chắc khỏe và tràn đầy sức sống.', 'Lấy một lượng vừa đủ xoa đều vào lòng bàn tay, thoa từ chân tóc đến ngọn tóc và mát-xa nhẹ nhàng. Sản phẩm dùng trên tóc ẩm hoặc tóc khô đều được.'),
-(3211, 'NƯỚC DƯỠNG TÓC TINH DẦU BƯỞI 140ml', 10, 145000, '/products/3211.png', 3, 'Phiên bản nâng cấp tăng gấp đôi lượng dầu dưỡng. Với tinh dầu bưởi nguyên chất từ vỏ bưởi, kết hợp với hoạt chất Xylishine và Vitamin B5, nước dưỡng tóc dầu bưởi giúp tóc giảm gãy rụng và khô xơ, cung cấp dưỡng chất giúp tóc luôn suôn mượt, mềm mại.', 'Lắc đều trước khi sử dụng, xịt sản phẩm lên chân tóc và mái tóc, tránh vùng mắt. Mát-xa nhẹ nhàng để dưỡng chất thấm sâu. Dùng mỗi ngày để đạt hiệu quả tốt nhất.'),
-(3221, 'DẦU GỘI BƯỞI POMELO 310ml', 10, 225000, '/products/3221.png', 3, 'Từ tinh dầu vỏ bưởi Việt Nam truyền thống kết hợp với vitamin B5, hoạt chất dưỡng ẩm Xylishine™ cùng công thức dịu nhẹ không chứa sulfate, dầu gội bưởi giúp làm sạch tóc và giảm gãy rụng, mang lại mái tóc đen dày, chắc khoẻ và mượt mà', 'Thoa sản phẩm lên tóc ướt và tạo bọt, mát-xa nhẹ nhàng từ gốc đến ngọn, sau đó gội sạch. Sử dụng hằng ngày để có kết quả tốt nhất. Tránh tiếp xúc với mắt.'),
-(3231, 'DẦU XẢ BƯỞI POMELO 310ml', 10, 165000, '/products/3231.png', 3, 'Sự kết hợp hài hoà giữa tinh dầu bưởi Việt Nam truyền thống, vitamin B5 và hoạt chất dưỡng ẩm Xylishine™ đã tạo nên dầu xả bưởi giàu dưỡng chất giúp giảm gãy rụng và làm mềm từng sợi tóc, mang lại mái tóc mượt mà và nhẹ nhàng sau khi xả', 'Thoa sản phẩm lên tóc ướt, mát-xa nhẹ nhàng lên thân tóc, sau đó xả sạch lại với nước. Sử dụng hằng ngày để có kết quả tốt nhất. Tránh tiếp xúc với mắt.'),
-(4111, 'SON DƯỠNG DẦU DỪA BẾN TRE 5g', 10, 32000, '/products/4111.png', 4, 'Giúp đôi môi mềm mượt, căng mọng, chống khô môi, nứt nẻ do thời tiết.', 'Thoa sản phẩm trực tiếp lên môi, có thể dùng như một lớp lót trước khi thoa son màu để tránh gây khô môi. Dùng mỗi ngày để đạt kết quả tốt nhất.'),
-(4121, 'CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT MÔI 5g', 0, 75000, '/products/4121.png', 4, 'Những hạt cà phê li ti được rang xay bằng tay hòa quyện vào dầu mắc-ca và bơ hạt mỡ, sẽ nhẹ nhàng làm bong những tế bào da chết ở môi, đem lại làn môi mềm và mịn màng.', 'Làm ẩm môi. Thoa sản phẩm trực tiếp lên môi bằng chuyển động trượt qua lại trong 30 giây, lớp tế bào chết sẽ nhẹ nhàng bong ra. Lau đi bằng khăn giấy hoặc khăn ấm. Sử dụng 3-4 lần một tuần để đạt kết quả tốt nhất.');
+INSERT INTO `product` (`product_id`, `product_name`, `quantity`, `price`, `avatar`, `category_id`, `intro`) VALUES
+(11, 'Dưa lưới vỏ xanh', 10, 45000, '/products/11.png', 1, 'Quả tròn, thịt màu cam, rất thơm và ngọt, độ đường 14 - 15%, trái nặng 1,3 - 1,5 kg.'),
+(12, 'Dưa hoàng kim', 20, 40000, '/products/12.png', 1, 'Dưa Vàng Kim Hoàng Hậu. Trọng lượng quả 1,8kg/quả. Độ Brix >= 14.'),
+(13, 'Nho xanh không hạt', 25, 250000, '/products/13.png', 1, 'Nho xanh Úc là một trong những giống nho phổ biến và được yêu thích nhất hiện nay, phần vỏ màu xanh lá cây khi chín ngả sang màu vàng, quả hình bầu dục, thịt dày chắc ngọt, nhiều nước và không có hạt.'),
+(14, 'Kiwi vàng Úc', 30, 250000, '/products/14.png', 1, 'Kiwi vàng có thịt quả màu vàng trong rất đẹp mắt, với nhiều hạt đen tạo thành 1 vòng tròn xung quanh trục dọc của quả. Kiwi vàng có vị ngọt thanh mát rất đặc trưng.'),
+(21, 'Thịt lợn mán', 10, 160000, '/products/21.png', 2, 'Thịt lợn sạch, được cho ăn thức ăn thiên nhiên.'),
+(22, 'Sụn Úc', 20, 75000, '/products/22.png', 2, 'Sụn nhập từ Úc, bảo quản qua quy trình chuyên nghiệp.'),
+(23, 'Sườn già', 30, 60000, '/products/23.png', 2, 'Sườn già tươi mổ trong ngày.'),
+(24, 'Ba chỉ bò Mỹ', 40, 160000, '/products/24.png', 2, 'Ba chỉ bò Mỹ thái cuộn.'),
+(31, 'Bí xanh', 10, 10000, '/products/31.png', 3, 'Bí sạch không thuốc trừ sâu.'),
+(32, 'Rau cải kale', 20, 25000, '/products/32.png', 3, 'Rau sạch không thuốc trừ sâu.'),
+(33, 'Bắp cải Sapa', 30, 45000, '/products/33.png', 3, 'Bắp cải sạch không thuốc trừ sâu.'),
+(34, 'Rau cải mèo', 40, 55000, '/products/34.png', 3, 'Rau cải sạch không thuốc trừ sâu.'),
+(41, 'Ốc giác', 10, 185000, '/products/41.png', 4, 'Ốc tươi mới đánh bắt.'),
+(42, 'Cua Cà Mau', 20, 339000, '/products/42.png', 4, 'Cua tươi mới đánh bắt.'),
+(43, 'Râu bạch tuộc', 30, 50000, '/products/43.png', 4, 'Bạch tuộc tươi mới đánh bắt.'),
+(44, 'Tôm sú', 40, 45000, '/products/44.png', 4, 'Tôm sú mới đánh bắt.');
 
 -- --------------------------------------------------------
 
@@ -207,7 +196,20 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
-(2147483647, 'ntn', 'thuyngocnguyen01@gmail.com', '0937785461', '123456', 'customer');
+(3, 'Customer', 'customer@gmail.com', '0123156789', '123456', 'customer');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(2, 'Lam', 'lmtran29@gmail.com', '0123456789', '123456', 'admin');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(1, 'Hoa', 'hoatran@gmail.com', '0123456789', '123456', 'admin');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(4, 'Phong', 'phongnguyen@gmail.com', '0123456789', '123456', 'admin');
+
+INSERT INTO `user` (`user_id`, `user_name`, `email`, `phone`, `password`, `role`) VALUES
+(5, 'Hoan', 'hoanphan@gmail.com', '0123456789', '123456', 'admin');
+
 
 --
 -- Triggers `user`
@@ -238,56 +240,54 @@ CREATE TABLE `_comment` (
 --
 
 INSERT INTO `_comment` (`product_id`, `customer_id`, `cmt_time`, `cmt`) VALUES
-(1111, 101, '2020-07-12 04:57:30', 'mọi người nên dùng thử, tôi thấy rất hiệu quả rẻ mà chất lượng ok lắm'),
-(1111, 126, '2020-06-22 08:51:13', 'người việt ủng hộ hàng việt'),
-(1121, 102, '2019-02-26 16:37:32', 'sản phẩm có mùi thơm nhẹ nhàng dễ chịu'),
-(1121, 127, '2021-02-15 03:20:30', 'bao bì đẹp lắm'),
-(1122, 103, '2021-08-08 23:50:08', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(1122, 128, '2020-01-17 03:12:41', 'sản phẩm xài khá tốt'),
-(1131, 104, '2021-04-23 02:27:38', 'bao bì đẹp lắm'),
-(1131, 129, '2021-02-14 05:55:57', 'sản phẩm có mùi thơm nhẹ nhàng dễ chịu'),
-(1132, 105, '2019-06-24 20:35:09', 'sản phẩm có mùi thơm nhẹ nhàng dễ chịu'),
-(1132, 130, '2020-01-26 13:40:09', 'sản phẩm xài khá tốt'),
-(1141, 106, '2019-09-09 05:42:52', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(1141, 131, '2020-07-24 03:08:12', 'tôi thích bao bì của sản phẩm này nhìn xinh lắm'),
-(1142, 107, '2021-12-23 23:15:15', 'sản phẩm này lành tính không bị kích ứng'),
-(1142, 132, '2021-11-23 08:32:28', 'người việt ủng hộ hàng việt'),
-(1151, 108, '2020-02-21 06:56:53', 'tôi thích bao bì của sản phẩm này nhìn xinh lắm'),
-(1151, 133, '2020-03-24 06:59:01', 'người việt ủng hộ hàng việt'),
-(1152, 109, '2020-07-25 23:36:37', 'người việt ủng hộ hàng việt'),
-(1152, 134, '2021-06-03 03:02:16', 'sản phẩm thiên nhiên nên mẹ tôi rất thích'),
-(1161, 110, '2021-11-11 03:16:49', 'sản phẩm này lành tính không bị kích ứng'),
-(1161, 135, '2021-05-08 06:25:41', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(1162, 111, '2020-07-18 09:49:32', 'bao bì đẹp lắm'),
-(1162, 136, '2019-02-14 00:43:01', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(1171, 112, '2019-05-04 21:34:14', 'mọi người nên dùng thử, tôi thấy rất hiệu quả rẻ mà chất lượng ok lắm'),
-(1171, 137, '2020-10-15 00:43:48', 'tôi thích bao bì của sản phẩm này nhìn xinh lắm'),
-(2111, 113, '2021-09-04 20:28:18', 'sản phẩm xài khá tốt'),
-(2111, 138, '2021-07-04 09:31:29', 'sản phẩm có mùi thơm nhẹ nhàng dễ chịu'),
-(2211, 114, '2019-12-21 17:14:13', 'tôi thích cách nhãn hàng bảo vệ môi trường bằng cách không dùng seal nilon'),
-(2211, 139, '2019-05-03 08:39:14', 'sản phẩm thiên nhiên nên mẹ tôi rất thích'),
-(2221, 115, '2021-12-14 04:32:55', 'sản phẩm thiên nhiên nên mẹ tôi rất thích'),
-(2221, 140, '2020-11-11 21:43:44', 'người việt ủng hộ hàng việt'),
-(2311, 116, '2020-04-04 05:57:24', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(2311, 141, '2019-06-08 13:36:11', 'đóng gói rất chắc chắn'),
-(2321, 117, '2021-12-16 15:19:01', 'người việt ủng hộ hàng việt'),
-(2321, 142, '2021-06-04 12:19:23', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(2331, 118, '2020-06-04 15:00:22', 'sản phẩm thiên nhiên nên mẹ tôi rất thích'),
-(2331, 143, '2021-04-26 19:04:47', 'sản phẩm xài khá tốt'),
-(2341, 119, '2019-01-09 11:25:56', 'đóng gói rất chắc chắn'),
-(2341, 144, '2020-03-04 23:52:26', 'sản phẩm xài khá tốt'),
-(3111, 120, '2021-11-08 02:56:21', 'tôi thích cách nhãn hàng bảo vệ môi trường bằng cách không dùng seal nilon'),
-(3111, 145, '2019-12-19 21:08:02', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(3211, 121, '2021-10-26 23:46:51', 'sản phẩm thiên nhiên nên mẹ tôi rất thích'),
-(3211, 146, '2020-11-28 03:32:22', 'người việt ủng hộ hàng việt'),
-(3221, 122, '2021-05-08 02:35:44', 'bao bì đẹp lắm'),
-(3221, 147, '2021-11-20 22:19:24', 'sản phẩm này lành tính không bị kích ứng'),
-(3231, 123, '2019-06-20 12:21:30', 'tôi thích cách nhãn hàng bảo vệ môi trường bằng cách không dùng seal nilon'),
-(3231, 148, '2020-09-04 15:19:51', 'sản phẩm có mùi thơm nhẹ nhàng dễ chịu'),
-(4111, 124, '2019-09-17 06:17:42', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
-(4111, 149, '2021-03-18 05:21:46', 'sản phẩm có mùi thơm nhẹ nhàng dễ chịu'),
-(4121, 125, '2019-03-21 06:35:00', 'sản phẩm thiên nhiên nên mẹ tôi rất thích'),
-(4121, 150, '2021-03-06 23:41:34', 'tôi thích bao bì của sản phẩm này nhìn xinh lắm');
+(11, 101, '2020-07-12 04:57:30', 'mọi người nên mua thử, tôi thấy rất rẻ mà chất lượng ok lắm'),
+(11, 126, '2020-06-22 08:51:13', 'người việt ủng hộ hàng việt'),
+(11, 102, '2019-02-26 16:37:32', 'trái cây có mùi thơm nhẹ nhàng dễ chịu'),
+(12, 127, '2021-02-15 03:20:30', 'đóng gói đẹp lắm'),
+(12, 103, '2021-08-08 23:50:08', 'nhìn sản phẩm khá bắt mắt, tôi rất thích'),
+(12, 128, '2020-01-17 03:12:41', 'sản phẩm khá tốt'),
+(13, 104, '2021-04-23 02:27:38', 'đóng gói đẹp lắm'),
+(13, 129, '2021-02-14 05:55:57', 'trái cây có mùi thơm nhẹ nhàng dễ chịu'),
+(13, 105, '2019-06-24 20:35:09', 'trái cây có mùi thơm nhẹ nhàng dễ chịu'),
+(14, 130, '2020-01-26 13:40:09', 'sản phẩm khá tốt'),
+(14, 106, '2019-09-09 05:42:52', 'nhìn sản phẩm khá bắt mắt, tôi rất thích'),
+(14, 131, '2020-07-24 03:08:12', 'tôi thích đóng gói của sản phẩm này nhìn xinh lắm'),
+(21, 107, '2021-12-23 23:15:15', 'sản phẩm này tốt'),
+(21, 132, '2021-11-23 08:32:28', 'người việt ủng hộ hàng việt'),
+(21, 108, '2020-02-21 06:56:53', 'tôi thích đóng gói của sản phẩm này nhìn xinh lắm'),
+(22, 133, '2020-03-24 06:59:01', 'người việt ủng hộ hàng việt'),
+(22, 109, '2020-07-25 23:36:37', 'người việt ủng hộ hàng việt'),
+(22, 134, '2021-06-03 03:02:16', 'sản phẩm tươi ngon nên mẹ tôi rất thích'),
+(23, 110, '2021-11-11 03:16:49', 'sản phẩm này tốt'),
+(23, 135, '2021-05-08 06:25:41', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
+(23, 111, '2020-07-18 09:49:32', 'đóng gói đẹp lắm'),
+(24, 136, '2019-02-14 00:43:01', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
+(24, 112, '2019-05-04 21:34:14', 'mọi người nên mua thử, tôi thấy rất rẻ mà chất lượng ok lắm'),
+(24, 137, '2020-10-15 00:43:48', 'tôi thích đóng gói của sản phẩm này nhìn xinh lắm'),
+(31, 113, '2021-09-04 20:28:18', 'sản phẩm khá tốt'),
+(31, 138, '2021-07-04 09:31:29', 'ăn rất vừa miệng, sản phẩm tươi ngon'),
+(31, 114, '2019-12-21 17:14:13', 'tôi thích cách nhãn hàng bảo vệ môi trường bằng cách không dùng seal nilon'),
+(32, 139, '2019-05-03 08:39:14', 'sản phẩm tươi ngon nên mẹ tôi rất thích'),
+(32, 115, '2021-12-14 04:32:55', 'sản phẩm tươi ngon nên mẹ tôi rất thích'),
+(32, 140, '2020-11-11 21:43:44', 'người việt ủng hộ hàng việt'),
+(33, 116, '2020-04-04 05:57:24', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
+(33, 141, '2019-06-08 13:36:11', 'đóng gói rất chắc chắn'),
+(33, 117, '2021-12-16 15:19:01', 'người việt ủng hộ hàng việt'),
+(34, 142, '2021-06-04 12:19:23', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
+(34, 118, '2020-06-04 15:00:22', 'sản phẩm tươi ngon nên mẹ tôi rất thích'),
+(34, 143, '2021-04-26 19:04:47', 'sản phẩm xài khá tốt'),
+(41, 119, '2019-01-09 11:25:56', 'đóng gói rất chắc chắn'),
+(41, 144, '2020-03-04 23:52:26', 'sản phẩm xài khá tốt'),
+(41, 120, '2021-11-08 02:56:21', 'tôi thích cách nhãn hàng bảo vệ môi trường bằng cách không dùng seal nilon'),
+(42, 145, '2019-12-19 21:08:02', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
+(42, 121, '2021-10-26 23:46:51', 'sản phẩm tươi ngon nên mẹ tôi rất thích'),
+(42, 146, '2020-11-28 03:32:22', 'người việt ủng hộ hàng việt'),
+(43, 122, '2021-05-08 02:35:44', 'đóng gói đẹp lắm'),
+(43, 147, '2021-11-20 22:19:24', 'sản phẩm này tốt'),
+(43, 123, '2019-06-20 12:21:30', 'tôi thích cách nhãn hàng bảo vệ môi trường bằng cách không dùng seal nilon'),
+(44, 148, '2020-09-04 15:19:51', 'ăn rất vừa miệng, sản phẩm tươi ngon'),
+(44, 124, '2019-09-17 06:17:42', 'nhìn sản phẩm khá cao cấp, tôi rất thích'),
+(44, 149, '2021-03-18 05:21:46', 'ăn rất vừa miệng, sản phẩm tươi ngon');
 
 --
 -- Indexes for dumped tables
