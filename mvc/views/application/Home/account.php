@@ -25,6 +25,7 @@
             $check = true;
             if ($name != null) {
                 if(!$conn->query("UPDATE user SET user_name=N'$name'WHERE user_id=N'$id'")) $check=false;
+                if(!$conn->query("UPDATE customer SET customer_name=N'$name'WHERE customer_id=N'$id'")) $check=false;
             }
             if ($email != null) {
                 if(!$conn->query("UPDATE user SET email=N'$email'WHERE user_id=N'$id'")) $check=false;

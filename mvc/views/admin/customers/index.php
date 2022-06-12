@@ -31,7 +31,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
       <tr>
         <th>ID</th>
         <th>Name</th>
-        <!-- <th>Edit</th> -->
+        <th>Edit</th>
         <th>Delete</th>
         <th colspan="2"></th>
       </tr>
@@ -44,7 +44,7 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
         <tr>
           <td><?php echo $row["customer_id"] ?></td>
           <td><?php echo $row["customer_name"] ?></td>
-          <!-- <td><a href="http://localhost/web212/customer/edit/<?php echo $row["customer_id"] ?>">Edit</td> -->
+          <td><a href="http://localhost/web212/customer/edit/<?php echo $row["customer_id"] ?>">Edit</td>
           <td><a href="http://localhost/web212/customer/delete/<?php echo $row["customer_id"] ?>">Delete</td>
         </tr>
       <?php 

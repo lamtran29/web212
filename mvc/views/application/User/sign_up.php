@@ -27,8 +27,9 @@ if(isset($_POST['submit'])){
     }
 
     $id = (integer)$key % 100000000;
+    $user = "INSERT INTO user (user_id,user_name, email, phone, password, role) VALUES (N'$id',N'$name', N'$email',N'$phone', N'$password', 1 )";
 
-    if(($data["userModal"]->con)->query("INSERT INTO user (user_id,user_name, email, phone, password, role) VALUES (N'$id',N'$name', N'$email',N'$phone', N'$password', 1 )")){
+    if(($data["userModal"]->con)->query($user)){
         echo "<script type='text/javascript'>alert('Tạo tài khoản thành công');
         window.location.href = 'http://localhost/web212/user/sign_in';
         </script>";
