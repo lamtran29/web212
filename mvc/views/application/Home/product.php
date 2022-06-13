@@ -241,7 +241,10 @@ function AddToCart(){
     selectedItem.quantity = parseInt(document.getElementById('counter-value').value);
     // selectedItem.tag = foodTag.get(selectedItem.name);
     selectedItem.tag = JSON.parse(document.getElementById('product-tag').innerHTML);
-    
+    if (parseInt(document.getElementById('counter-value').value) < 1) {
+      alert('Vui lòng thêm ít nhất 1 sản phẩm.');
+      return;
+    }
     img = document.getElementById("product-picture");                                                   // img to data url
     var imgCanvas = document.createElement("canvas"),
         imgContext = imgCanvas.getContext("2d");

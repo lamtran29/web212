@@ -142,9 +142,9 @@
 
                         <input type="radio" id="cod" name="payment" value="cod" required>
                         <label for="cod">Thanh toán khi nhận hàng</label><br>
-                        <input type="radio" id="momo" name="payment" value="momo" required>
+                        <input type="radio" id="momo" name="payment" value="momo" required disabled>
                         <label for="momo">Thanh toán bằng MOMO</label><br>
-                        <input type="radio" id="card" name="payment" value="card" required>
+                        <input type="radio" id="card" name="payment" value="card" required disabled>
                         <label for="card">Thanh toán bằng thẻ tín dụng</label>
                 </div>
                 </div>
@@ -277,7 +277,7 @@ let selectedItem = {
             if (myProduct === undefined){
                 container.innerHTML += ''
                     + '<div class="product product__' + item.tag + '">'
-                    + '<h5 class="product__title">' + '<img class="product__img" src="' + item.img_src + '">' + item.name + '</h5>'
+                    + '<h5 class="product__title" style="justify-content: left;">' + '<img class="product__img" src="' + item.img_src + '">' + item.name + '</h5>'
                     + '<h5 class="product__price">' + item.price + '</h5>'
                     + '<h5 class="product__quantity">' + '<span class="counter" style = "font-style: normal;"><span class="minus" onclick="MinusBtn(\'' + item.tag + '\')">-</span><input type="text" value="' + item.quantity + '" /><span onclick="PlusBtn(\'' + item.tag + '\')" class="plus">+</span></span>' + '</h5>'
                     + '<h5 class="product__total">'+ item.price * item.quantity + '<a onclick="CloseBtn(\'' + item.tag + '\')" class = "product__close"> <img src="https://img.icons8.com/ios-glyphs/30/ffffff/macos-close.png"/> </a>' + '</h5>'
