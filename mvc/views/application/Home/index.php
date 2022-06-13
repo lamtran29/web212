@@ -51,7 +51,7 @@
             <!-- <div class="category-cards row"> -->
                 
                 <li class="category-card" style="text-align: center;">
-                    <a href="http://localhost/web212/home/catalog">
+                    <a href="http://localhost/web212/home/category/1">
                         <div class="category-img">
                             <img src="../../../web212/public/assets/img/pages/home/fruit.png" alt="">
                         </div>
@@ -59,7 +59,7 @@
                     </a>
                 </li>
                 <li class="category-card" style="text-align: center;">
-                    <a href="http://localhost/web212/home/catalog">
+                    <a href="http://localhost/web212/home/category/2">
                         <div class="category-img">
                             <img src="../../../web212/public/assets/img/pages/home/meat.png" alt="">
                         </div>
@@ -68,7 +68,7 @@
                 </li>
                 
                 <li class="category-card" style="text-align: center;">
-                    <a href="http://localhost/web212/home/catalog">
+                    <a href="http://localhost/web212/home/category/3">
                         <div class="category-img">
                             <img src="../../../web212/public/assets/img/pages/home/vegetables.png" alt="">
                         </div>
@@ -76,7 +76,7 @@
                     </a>
                 </li>
                 <li class="category-card" style="text-align: center;">
-                    <a href="http://localhost/web212/home/catalog">
+                    <a href="http://localhost/web212/home/category/4">
                         <div class="category-img">
                             <img src="../../../web212/public/assets/img/pages/home/seafood.png" alt="">
                         </div>

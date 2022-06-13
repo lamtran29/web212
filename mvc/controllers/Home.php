@@ -14,6 +14,12 @@
             echo $layout;
         }
         
+        function category($id){
+            //load Modal
+            $layout = $this->view("layouts/application", ["page"=>"application/home/category", "id" => $id]);
+            echo $layout;
+        }
+        
         function search($name){
             //load Modal
             $product = $this->modal("ProductModal");
