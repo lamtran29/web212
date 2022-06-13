@@ -9,6 +9,11 @@
             $qr = "SELECT * FROM product WHERE product_id = $id";
             return mysqli_query($this->con, $qr);
         }
+
+        public function getProductWithName($name){
+            $qr = "SELECT * FROM product WHERE product_name LIKE '%$name%'";
+            return mysqli_query($this->con, $qr);
+        }
     }
 
 ?>

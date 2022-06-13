@@ -112,7 +112,17 @@
       </div>
       <div class="uk-modal-full uk-modal" id="modal-full" data-uk-modal>
         <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport><button class="uk-modal-close-full" type="button" data-uk-close></button>
-          <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
+          <form class="uk-search uk-search-large" name="searchform" action="#" method="POST">
+            <input class="uk-search-input uk-text-center" type="search" name="searchinput" placeholder="Nhập sản phẩm cần tìm..." autofocus>
+          </form>
         </div>
       </div>
     </header>
+
+    <?php 
+    if(isset($_POST['searchinput']))
+    {
+      echo '<script type = "text/javascript">
+        window.location.href = "http://localhost/web212/home/search/' . $_POST['searchinput'] . '"</script>';
+    }
+  ?>  

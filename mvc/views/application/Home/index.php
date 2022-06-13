@@ -49,14 +49,6 @@
         <div class="uk-container">
           <ul class="js-filter uk-grid uk-grid-small uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>    
             <!-- <div class="category-cards row"> -->
-                <li class="category-card" style="text-align: center;">
-                    <a href="http://localhost/web212/home/catalog">
-                        <div class="category-img">
-                            <img src="../../../web212/public/assets/img/pages/home/vegetables.png" alt="">
-                        </div>
-                        <h5 class="name"><b>Rau củ quả</b></h5>
-                    </a>
-                </li>
                 
                 <li class="category-card" style="text-align: center;">
                     <a href="http://localhost/web212/home/catalog">
@@ -75,6 +67,14 @@
                     </a>
                 </li>
                 
+                <li class="category-card" style="text-align: center;">
+                    <a href="http://localhost/web212/home/catalog">
+                        <div class="category-img">
+                            <img src="../../../web212/public/assets/img/pages/home/vegetables.png" alt="">
+                        </div>
+                        <h5 class="name"><b>Rau củ quả</b></h5>
+                    </a>
+                </li>
                 <li class="category-card" style="text-align: center;">
                     <a href="http://localhost/web212/home/catalog">
                         <div class="category-img">
@@ -316,4 +316,3 @@
       require_once "./mvc/views/".$data["footer"].".php";
     ?>
   </div>
-

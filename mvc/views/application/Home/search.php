@@ -9,11 +9,11 @@
         <div class="first-screen__content hide-in-sd" style="height: 300px;">
             <div class="uk-container" style="padding: 32px 0">
             <div class="first-screen__box page-info">
-                <h2 class="first-screen-page">Danh mục sản phẩm</h2>
+                <h2 style="font-size: 50px" class="first-screen-page">Kết quả tìm kiếm cho: "<?php echo $data["name"]?>"</h2>
                 <div class="first-screen__breadcrumb">
                     <ul class="uk-breadcrumb">
                         <li><a href="http://localhost/web212/home/index">Trang chủ</a></li>
-                        <li> <a href="http://localhost/web212/home/catalog">Sản phẩm</a></li>
+                        <li> <a href="#">Kết quả tìm kiếm</a></li>
                     </ul>
                 </div>
                 </div>

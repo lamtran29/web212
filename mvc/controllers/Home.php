@@ -13,6 +13,13 @@
             $layout = $this->view("layouts/application", ["page"=>"application/home/catalog", "header"=>"shared/header", "footer"=>"shared/footer", "products"=>$product->getAllProduct()]);
             echo $layout;
         }
+        
+        function search($name){
+            //load Modal
+            $product = $this->modal("ProductModal");
+            $layout = $this->view("layouts/application", ["page"=>"application/home/search", "header"=>"shared/header", "footer"=>"shared/footer", "products"=>$product->getProductWithName($name), "name" => $name]);
+            echo $layout;
+        }
 
         function product($id){
             //load modal with ID
