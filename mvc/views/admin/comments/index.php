@@ -27,8 +27,8 @@ if (isset($_SESSION["email"]) && $_SESSION["role"] == "customer") {
     <table class="table table-borderless card-table">
       <thead class="thead-light">
       <tr>
-        <th>ID</th>
-        <th>Customer</th>
+        <th>Product_ID</th>
+        <th>Customer_ID</th>
         <th>Time</th>
         <th>Comment</th>
 

@@ -1,4 +1,30 @@
+<?php
+  if (isset($_POST['submit'])) {
+    $productId = $data['pid'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $comment = $_POST['feedback'];
+    $customer = 107;
+    if(isset($_SESSION['id'])) $customer = $_SESSION['id'];
+    
+    date_default_timezone_set("Asia/Bangkok");
+    $datetime = date("Y-m-d H:i:s");
 
+
+    if ($name == null || $email == null || $comment == null){
+      echo '<script>alert("Vui lòng điền đầy đủ thông tin")</script>';
+    } 
+    else {
+      $sql = "INSERT INTO _comment (product_id, customer_id, cmt_time, cmt) VALUES (N'$productId',N'$customer', N'$datetime',N'$comment')";
+      if(($data["commentModal"]->con)->query($sql)){
+        echo "<script>alert('Thêm đánh giá thành công!')</script>";
+      }
+      else{
+          echo "<script>alert('Thêm đánh giá thất bại')</script>";
+      }
+    }
+  }
+?>
 <div class="page-wrapper">
     <?php 
       require_once "./mvc/views/".$data["header"].".php";
@@ -7,6 +33,7 @@
 <main class="page-main">
       <?php 
         while ($row = mysqli_fetch_assoc($data["product"])){
+          $productId = $row["product_id"];
       ?>
 
       <div class="section-first-screen">
@@ -192,12 +219,12 @@
                       <div class="uk-h2">Để lại đánh giá của bạn</div>
                     </div>
                     <div class="section-content">
-                      <form action="#!">
+                      <form action="#!" method="POST">
                         <div class="uk-grid uk-grid-small uk-child-width-1-2@s" data-uk-grid>
-                          <div><input class="uk-input uk-form-large" type="text" placeholder="Tên *"></div>
-                          <div><input class="uk-input uk-form-large" type="text" placeholder="Email *"></div>
-                          <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large" placeholder="Đánh giá *"></textarea></div>
-                          <div><button class="uk-button uk-button-large" type="submit">Gửi đánh giá</button></div>
+                          <div><input class="uk-input uk-form-large" type="text" name="name" placeholder="Tên *"></div>
+                          <div><input class="uk-input uk-form-large" type="text" name="email" placeholder="Email *"></div>
+                          <div class="uk-width-1-1"><textarea class="uk-textarea uk-form-large" name="feedback" placeholder="Đánh giá *"></textarea></div>
+                          <div><button class="uk-button uk-button-large" name='submit' type="submit">Gửi đánh giá</button></div>
                         </div>
                       </form>
                     </div>
@@ -209,7 +236,6 @@
         </div>
       </div>
 
-      
       <?php 
               }
       ?>
@@ -389,3 +415,5 @@ function ChangeUI(){
 
 ChangeUI();
 </script>
+
+

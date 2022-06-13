@@ -132,10 +132,12 @@
                 <div class="uk-grid uk-grid-medium uk-width-1-1 uk-flex-left slotname" data-uk-grid style="margin-left: 2%; margin-bottom: 100px;">
                     <h2><b>Thông tin nhận hàng</b></h2>
                     <div>
-                        <input class="uk-input " id="name" type="text" placeholder="Tên người nhận hàng" value="" style="margin-top: 26px;" required>
-                        <input class="uk-input" id="email" type="email" placeholder="Email" value="" style="margin-top: 5px;">
-                        <input class="uk-input" id="phone" type="number" placeholder="Số điện thoại nhận hàng" value="" style="margin-top: 5px;">
-                        <input class="uk-input" id="address" type="text" placeholder="Địa chỉ nhận hàng" value="" style="margin-top: 5px;"><br>
+                        <form>
+                            <input class="uk-input " id="name" type="text" placeholder="Tên người nhận hàng" value="" style="margin-top: 26px;" required>
+                            <input class="uk-input" id="email" type="email" placeholder="Email" value="" style="margin-top: 5px;">
+                            <input class="uk-input" id="phone" type="number" placeholder="Số điện thoại nhận hàng" value="" style="margin-top: 5px;">
+                            <input class="uk-input" id="address" type="text" placeholder="Địa chỉ nhận hàng" value="" style="margin-top: 5px;"><br>
+                        </form>
                     </div>
                     <div style="text-align: left; font-size: 20px">
                         <h2 style="margin: 0;"><b>Phương thức thanh toán</b></h2> <br> 
